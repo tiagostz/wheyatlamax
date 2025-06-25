@@ -54,4 +54,41 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     });
+
+    // Caixinha expansível de ingredientes
+    const ingredientesToggleDesktop = document.getElementById('ingredientesToggleDesktop');
+    const ingredientesToggleMobile = document.getElementById('ingredientesToggleMobile');
+    const ingredientesExpansivelDesktop = document.querySelector('.ingredientes-desktop');
+    const ingredientesExpansivelMobile = document.querySelector('.ingredientes-mobile');
+    const ingredientesToggleTextDesktop = document.querySelector('#ingredientesToggleDesktop .ingredientes-toggle-text');
+    const ingredientesToggleTextMobile = document.querySelector('#ingredientesToggleMobile .ingredientes-toggle-text');
+    
+    // Função para controlar a expansão
+    function toggleIngredientes(expansivel, toggleText) {
+        const isAtivo = expansivel.classList.contains('ativo');
+        
+        if (isAtivo) {
+            // Fechar
+            expansivel.classList.remove('ativo');
+            toggleText.textContent = 'Ver Informações dos Ingredientes';
+        } else {
+            // Abrir
+            expansivel.classList.add('ativo');
+            toggleText.textContent = 'Ocultar Informações dos Ingredientes';
+        }
+    }
+    
+    // Event listeners para desktop
+    if (ingredientesToggleDesktop && ingredientesExpansivelDesktop) {
+        ingredientesToggleDesktop.addEventListener('click', function() {
+            toggleIngredientes(ingredientesExpansivelDesktop, ingredientesToggleTextDesktop);
+        });
+    }
+    
+    // Event listeners para mobile
+    if (ingredientesToggleMobile && ingredientesExpansivelMobile) {
+        ingredientesToggleMobile.addEventListener('click', function() {
+            toggleIngredientes(ingredientesExpansivelMobile, ingredientesToggleTextMobile);
+        });
+    }
 }); 

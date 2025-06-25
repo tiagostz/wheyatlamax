@@ -1352,7 +1352,7 @@ footer {
     }
 }
 
-.ingredientes-mobile {
+/* .ingredientes-mobile {
     display: none;
 }
 @media (max-width: 700px) {
@@ -1364,7 +1364,125 @@ footer {
         line-height: 1.5;
         color: #f5e5b8;
     }
+} */
+
+.ingredientes-info {
+    display: none;
+}
+
+/* Estilos para a caixinha expansível de ingredientes */
+.ingredientes-expansivel {
+    margin-top: 24px;
+    border: 1px solid #a99d7c;
+    border-radius: 8px;
+    overflow: hidden;
+    background: rgba(169, 157, 124, 0.05);
+}
+
+/* Controle de visibilidade desktop/mobile */
+.ingredientes-desktop {
+    display: block;
+}
+
+.ingredientes-mobile {
+    display: none;
+}
+
+@media (max-width: 700px) {
+    .ingredientes-desktop {
+        display: none;
+    }
+    
+    .ingredientes-mobile {
+        display: block;
+    }
+}
+
+.ingredientes-toggle {
+    width: 100%;
+    background: linear-gradient(90deg, #a99d7c 0%, #7a684e 100%);
+    color: #2a2820;
+    border: none;
+    padding: 16px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.ingredientes-toggle:hover {
+    background: linear-gradient(90deg, #7a684e 0%, #a99d7c 100%);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(169, 157, 124, 0.3);
+}
+
+.ingredientes-toggle:active {
+    transform: translateY(0);
+}
+
+.ingredientes-toggle-text {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.ingredientes-toggle-icon {
+    font-size: 0.9rem;
+    transition: transform 0.3s ease;
+}
+
+.ingredientes-expansivel.ativo .ingredientes-toggle-icon {
+    transform: rotate(180deg);
+}
+
+.ingredientes-expansivel.ativo .ingredientes-info {
+    max-height: 300px;
+    padding: 20px;
+}
+
+.ingredientes-expansivel .ingredientes-info {
+    display: block !important;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.4s ease;
+    padding: 0 20px;
+    background: rgba(42, 40, 32, 0.8);
+    border-top: 1px solid rgba(169, 157, 124, 0.2);
+    text-align: left;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #a99d7c;
+}
+
+.ingredientes-info p {
+    margin: 0 0 12px 0;
+    line-height: 1.6;
+}
+
+.ingredientes-info p:last-child {
+    margin-bottom: 0;
+}
+
+/* Responsividade para a caixinha expansível */
+@media (max-width: 700px) {
+    .ingredientes-toggle {
+        padding: 14px 16px;
+        font-size: 0.95rem;
+    }
+    
+    .ingredientes-toggle-text {
+        font-size: 0.95rem;
+    }
+    
     .ingredientes-info {
-        display: none !important;
+        padding: 0 16px;
+        font-size: 0.9rem;
+    }
+    
+    .ingredientes-expansivel.ativo .ingredientes-info {
+        padding: 16px;
     }
 } 
