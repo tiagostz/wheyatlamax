@@ -1348,4 +1348,21 @@ footer {
         min-height: 0;
         object-fit: contain;
     }
+}
+
+.ingredientes-mobile {
+    display: none;
+}
+@media (max-width: 700px) {
+    .ingredientes-mobile {
+        display: block;
+        margin-top: 1.5rem;
+        text-align: left;
+        font-size: 0.95rem;
+        line-height: 1.5;
+        color: #f5e5b8;
+    }
+    .ingredientes-info {
+        display: none !important;
+    }
 } 
