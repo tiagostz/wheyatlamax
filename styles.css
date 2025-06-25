@@ -342,7 +342,7 @@ footer {
 
 .hero-nutri {
     position: relative;
-    min-height: 870px;
+    min-height: 620px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -373,11 +373,19 @@ footer {
     justify-content: space-between;
     width: 100%;
     max-width: 1400px;
-    padding: 5rem 3rem;
+    padding: 3rem 3rem;
 }
 .hero-nutri-text {
     max-width: 650px;
 }
+
+/* Desktop: move o texto para cima */
+@media (min-width: 1101px) {
+    .hero-nutri-text {
+        transform: translateY(-8rem);
+    }
+}
+
 .hero-nutri h1, .hero-nutri-text h1 {
     font-size: 3rem;
     color: #fffbe6;
@@ -1341,9 +1349,9 @@ footer {
 
 @media (max-width: 700px) {
     .hero-nutri-bg-img {
-        max-width: 85vw;
+        max-width: 80vw;
         left: 50%;
-        top: 29%;
+        top: 23%;
         transform: translate(-50%, -50%);
         height: auto;
         min-width: 0;
