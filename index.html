@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whey Atlamax</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/jpeg" href="images/icone.png">
+</head>
+<body>
+    <!-- MENU FLUTUANTE -->
+    <nav class="menu-flutuante">
+        <div class="menu-flutuante-content">
+            <a href="#home" class="menu-logo">Atlamax <img src="images/atlamax5.png" alt="Logo Atlamax" class="menu-logo-img"></a>
+            <button class="menu-hamburger" id="menuHamburger" aria-label="Abrir menu"><i class="fas fa-bars"></i></button>
+            <ul class="menu-desktop">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#produto">Produto</a></li>
+                <li><a href="#contatos">Contatos</a></li>
+            </ul>
+        </div>
+        <div class="menu-mobile" id="menuMobile">
+            <button class="menu-close" id="menuClose" aria-label="Fechar menu"><i class="fas fa-times"></i></button>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#produto">Produto</a></li>
+                <li><a href="#contatos">Contatos</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- HERO/BANNER -->
+    <section class="hero-nutri" id="home">
+        <div class="hero-nutri-decoration hero-nutri-decoration--top"></div>
+        <img src="images/atlamax5.png" alt="Whey Atlamax" class="hero-nutri-bg-img">
+        <div class="hero-nutri-overlay"></div>
+        <div class="hero-nutri-content">
+            <div class="hero-nutri-text">
+                <h1>Whey Atlamax</h1>
+                <p>64g de proteína + 5g de creatina por dose<br>Sabor Capuccino</p>
+                <a href="https://wa.me/5519995968303" class="btn-hero-nutri" target="_blank">Quero Potencializar Meus Resultados</a>
+            </div>
+            <div class="hero-nutri-img-wrap">
+                <!-- imagem removida daqui -->
+            </div>
+        </div>
+        <div class="hero-nutri-decoration hero-nutri-decoration--bottom"></div>
+    </section>
+
+    <!-- BENEFÍCIOS EM CARDS -->
+    <section class="beneficios-cards">
+        <h2>Benefícios do Atlamax</h2>
+        <div class="beneficios-lista">
+            <div class="beneficio-card"><i class="fas fa-dumbbell"></i><span>64g de proteína por dose</span></div>
+            <div class="beneficio-card"><i class="fas fa-bolt"></i><span>+5g de creatina</span></div>
+            <div class="beneficio-card"><i class="fa-solid fa-bowl-rice"></i><span>Rico em vitaminas e nutrientes</span></div>
+            <div class="beneficio-card"><i class="fas fa-mug-hot"></i><span>Sabor capuccino</span></div>
+            <div class="beneficio-card"><i class="fas fa-0"></i><span>Zero açúcar adicionado</span></div>
+        </div>
+    </section>
+
+    <!-- DESTAQUE PRODUTO -->
+    <section class="produto-destaque" id="produto">
+        <div class="produto-info-nutri">
+            <h2>O Whey para quem exige o melhor</h2>
+            <ul>
+                <li>Alta concentração de proteína e creatina</li>
+                <li>Ideal para ganho de massa muscular</li>
+                <li>Recuperação acelerada</li>
+            </ul>
+            <a href="https://wa.me/5519995968303" class="btn-produto-nutri" target="_blank">Comprar Agora</a>
+            <img src="images/atlamax2.png" alt="Atlamax" style="display:block; margin:84px auto 0 auto; max-width:600px; width:100%;">
+        </div>
+        <div class="produto-tabela-nutri">
+            <h3>Tabela Nutricional</h3>
+            <h5>Porção de 300ml (1 unidade)</h5>
+            <table>
+                <tr><th>Componente</th><th>Qntd. por porção</th><th>%VD</th></tr>
+                <tr><td>Valor Energético</td><td>378kcal</td><td>19%</td></tr>
+                <tr><td>Protéinas</td><td>64g</td><td>128%</td></tr>
+                <tr><td>Carboidratos</td><td>12g</td><td>4%</td></tr>
+                <tr><td>Gorduras Totais</td><td>0,7g</td><td>1%</td></tr>
+                <tr><td>Gorduras Saturadas</td><td>0,3g</td><td>1%</td></tr>
+                <tr><td>Sódio</td><td>0g</td><td>--</td></tr>
+                <tr><td>Creatina</td><td>5g</td><td>--</td></tr>
+                <tr><td>Cafeína</td><td>100mg</td><td>--</td></tr>
+                <tr><td>Taurina</td><td>650g</td><td>--</td></tr>
+                <tr><td>Colina</td><td>120mg</td><td>--</td></tr>
+                <tr><td>Tirosina</td><td>80mg</td><td>--</td></tr>
+                <tr><td>Vitamina C</td><td>90mg</td><td>100%</td></tr>
+                <tr><td>Vitamina A</td><td>1200mcg</td><td>200%</td></tr>
+                <tr><td>Vitamina B1</td><td>1,32mg</td><td>110%</td></tr>
+                <tr><td>Vitamina B2</td><td>1,5mg</td><td>115%</td></tr>
+                <tr><td>Vitamina B3</td><td>16mg</td><td>100%</td></tr>
+                <tr><td>Vitamina B5</td><td>5mg</td><td>100%</td></tr>
+                <tr><td>Vitamina B6</td><td>1,3mg</td><td>100%</td></tr>
+                <tr><td>Vitamina B9</td><td>240mcg</td><td>100%</td></tr>
+                <tr><td>Vitamina B12</td><td>3mcg</td><td>100%</td></tr>
+            </table>
+        </div>
+    </section>
+
+    <!-- DEPOIMENTOS EM CARDS -->
+    <section class="depoimentos-cards" id="clientes">
+        <h2>Feedback dos nossos clientes</h2>
+        <div class="depoimentos-cards-lista depoimentos-cards-stories">
+            <div class="story-card">
+                <a href="https://www.instagram.com/s/aGlnaGxpZ2h0OjE4MDkyMDY4MDY5NjA4NDk3?story_media_id=3637471601453671884&igsh=bGZlMXNkazBsdWVj" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                    <span>Ver story real de cliente 1<br>no Instagram</span>
+                    <span class="story-tip">Clique para assistir</span>
+                </a>
+            </div>
+            <div class="story-card">
+                <a href="https://www.instagram.com/s/aGlnaGxpZ2h0OjE4MDkyMDY4MDY5NjA4NDk3?story_media_id=3638111711400361953&igsh=bGZlMXNkazBsdWVj" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                    <span>Ver story real de cliente 2<br>no Instagram</span>
+                    <span class="story-tip">Clique para assistir</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ EM ACORDEÃO -->
+    <section class="faq-nutri" id="perguntas">
+        <h2>Perguntas Frequentes</h2>
+        <div class="faq-nutri-lista">
+            <div class="faq-nutri-item">
+                <button class="faq-nutri-pergunta">O Whey Atlamax é indicado para iniciantes?</button>
+                <div class="faq-nutri-resposta">Sim! Porém é ideal para praticantes de exercícios físicos 
+                    devido à sua alta concentração de proteína. Para não praticantes, 
+                    é recomendado o uso com moderação devido ao potencial de causar desconfortos intestinais..</div>
+            </div>
+            <div class="faq-nutri-item">
+                <button class="faq-nutri-pergunta">Posso tomar todos os dias?</button>
+                <div class="faq-nutri-resposta">Sim, especialmente se você pratica exercícios físicos e precisa de uma alta ingestão de proteína. 
+                    Cada dose oferece 64g de proteína em 300ml, sendo ideal para complementar treinos intensos. Para quem não pratica atividades, 
+                    o consumo deve ser avaliado com moderação.</div>
+            </div>
+            <div class="faq-nutri-item">
+                <button class="faq-nutri-pergunta">Tem glúten ou açúcar?</button>
+                <div class="faq-nutri-resposta">O Whey Atlamax é livre de glúten e zero açúcar adicionado.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RODAPÉ ELEGANTE -->
+    <footer class="footer-nutri" id="contatos">
+        <div class="footer-nutri-content">
+            <div class="footer-nutri-logo">Whey Atlamax <img src="images/atlamax5.png" alt="Ícone Atlamax" class="footer-nutri-logo-img"></div>
+            <div class="footer-nutri-social">
+                <a href="https://instagram.com/atlamaxsuplementos" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer-nutri-contact">
+            <span><i class="fab fa-whatsapp"></i> <a href="https://wa.me/5519995968303" target="_blank" style="color:inherit; text-decoration:none;">+55 19 99596-8303</a></span>
+            <span style="margin-left:2rem;"><i class="fab fa-instagram"></i> <a href="https://instagram.com/atlamaxsuplementos" target="_blank" style="color:inherit; text-decoration:none;">@atlamaxsuplementos</a></span>
+        </div>
+        <p>&copy; 2025 Whey Atlamax. Todos os direitos reservados.</p>
+    </footer>
+    <!-- WhatsApp Flutuante -->
+    <a href="https://wa.me/5519995968303" class="whatsapp-float" target="_blank" title="Fale conosco no WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <script src="script.js"></script>
+</body>
+</html> 
