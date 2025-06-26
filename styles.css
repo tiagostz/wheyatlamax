@@ -867,6 +867,22 @@ footer {
         margin: 0 auto 1.5rem auto;
         max-width: 320px;
     }
+    /* Hero imagem centralizada e menor */
+    .hero-nutri-bg-img {
+        max-width: 700px;
+        width: 90vw;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    /* Cards de benefícios mais compactos */
+    .beneficios-lista {
+        gap: 1.2rem;
+    }
+    .beneficio-card {
+        width: 160px;
+        padding: 1.2rem 0.7rem;
+        font-size: 1rem;
+    }
 }
 @media (max-width: 700px) {
     .hero-nutri-content {
@@ -1513,6 +1529,22 @@ footer {
         max-width: 98vw;
         padding: 1rem 1vw;
     }
+    /* Hero imagem centralizada e menor */
+    .hero-nutri-bg-img {
+        max-width: 700px;
+        width: 90vw;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    /* Cards de benefícios mais compactos */
+    .beneficios-lista {
+        gap: 1.2rem;
+    }
+    .beneficio-card {
+        width: 160px;
+        padding: 1.2rem 0.7rem;
+        font-size: 1rem;
+    }
 }
 @media (max-width: 1024px) {
     main {
@@ -1540,5 +1572,16 @@ footer {
     }
     .footer-nutri-logo, .footer-logo {
         font-size: 1.1rem;
+    }
+    .hero-nutri-bg-img {
+        max-width: 500px;
+        width: 95vw;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .beneficio-card {
+        width: 140px;
+        font-size: 0.95rem;
+        padding: 1rem 0.5rem;
     }
 } 
